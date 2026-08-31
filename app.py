@@ -1,11 +1,17 @@
-
+import os
 import streamlit as st
+
+# Get API key from Streamlit Cloud Secrets
+os.environ["MISTRAL_API_KEY"] = st.secrets["MISTRAL_API_KEY"]
+
 import pandas as pd
 import plotly.express as px
 import uuid
 from datetime import datetime
 
+# Import LangGraph AFTER setting the API key
 from graph import app
+
 
 
 # =========================================================
