@@ -1,0 +1,8 @@
+langgraph
+langchain-mistralai
+pandas
+openpyxl
+sqlalchemy
+streamlit
+python-dotenv
+plotly
